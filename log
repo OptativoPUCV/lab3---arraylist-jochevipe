@@ -108,3 +108,17 @@ Thu 30 Mar 2023 03:05:40 AM UTC:
  tests:  8|2
 total_score: 40/70
 e18dd3f
+Thu 30 Mar 2023 08:43:41 PM UTC: 
+ arraylist.c | 19 ++++++++++++++++++-
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘pop’:
+arraylist.c:67:9: error: unused variable ‘ind’ [-Werror=unused-variable]
+   67 |     int ind = i + l->size;
+      |         ^~~
+arraylist.c:82:19: error: ‘ind’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   82 |     return l->data[ind];
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+7c2bc51
