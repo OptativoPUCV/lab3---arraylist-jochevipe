@@ -64,7 +64,7 @@ void* pop(ArrayList * l, int i){
 
   if(i < 0){
 
-    int ind = i + l->size;
+    ind = i + l->size;
     
   }else{
 

@@ -122,3 +122,9 @@ arraylist.c:82:19: error: ‘ind’ may be used uninitialized in this function [
 cc1: all warnings being treated as errors
 Compilation failed
 7c2bc51
+Thu 30 Mar 2023 08:44:24 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|2
+total_score: 40/70
+e913d4d
