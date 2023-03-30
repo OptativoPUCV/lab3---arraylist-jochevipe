@@ -23,6 +23,16 @@ ArrayList *lista = (ArrayList *) malloc(sizeof(ArrayList));
 
 void append(ArrayList * l, void * data){
 
+if(l->size == l->capacity){
+
+  l->data = realloc(l->data, l->capacity * 2);
+  l->data = data;
+  l->size ++;
+}else{
+  l->data = data;
+  l->size ++;
+}
+  
 }
 
 void push(ArrayList * l, void * data, int i){
