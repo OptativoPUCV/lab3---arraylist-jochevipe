@@ -59,7 +59,7 @@ void push(ArrayList * l, void * data, int i){
 
 void* pop(ArrayList * l, int i){
 
-  int ind = 0;
+  int ind;
   if(i >= l->size) return NULL;
 
   if(i < 0){
@@ -79,7 +79,7 @@ void* pop(ArrayList * l, int i){
 
   l->size--;
   
-    return l->data[ind];
+    return l->data[ind-1];
 }
 
 void* get(ArrayList * l, int i){
