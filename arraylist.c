@@ -59,19 +59,16 @@ void push(ArrayList * l, void * data, int i){
 
 void* pop(ArrayList * l, int i){
 
-  int ind;
+  
   if(i >= l->size) return NULL;
 
   if(i < 0){
 
-    ind = i + l->size;
+    i = i + l->size;
     
-  }else{
-
-    ind = i;
   }
 
-  for(int j=ind-1 ; j < l->size; j++){
+  for(int j=i-1 ; j < l->size; j++){
 
     l->data[j] = l->data[j+1];
     
@@ -79,7 +76,7 @@ void* pop(ArrayList * l, int i){
 
   l->size--;
   
-    return l->data[ind-1];
+    return l->data[i];
 }
 
 void* get(ArrayList * l, int i){
