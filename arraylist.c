@@ -70,7 +70,7 @@ void* pop(ArrayList * l, int i){
 
   void* aux = l->data[i];
   
-  for(int j=i-1 ; j < l->size; j++){
+  for(int j=i ; j < l->size-1 ; j++){
 
     l->data[j] = l->data[j+1];
     
